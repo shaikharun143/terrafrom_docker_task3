@@ -51,6 +51,7 @@ terraform init
 terraform plan
 3️⃣ Deploy Infrastructure
 
+
 Creates Docker image + Nginx container
 
 terraform apply
@@ -63,9 +64,11 @@ docker ps
 Open in browser:
 
 http://localhost:8080
-
+```
 ✔ You should see the Nginx Welcome Page
 
+
+ ```
 5️⃣ Inspect Terraform State
 terraform state list
 terraform state show docker_container.nginx
@@ -138,7 +141,7 @@ Successfully provisioned and managed a Dockerized Nginx server using Terraform a
 Harun Shaik
 DevOps & Cloud Enthusiast 🚀
 
-
+```
 
 Task 3 — Infrastructure as Code (IaC) with Terraform
 Provision a local Docker container (nginx) using Terraform, then destroy it.
