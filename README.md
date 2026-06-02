@@ -15,13 +15,15 @@ use ec2 instance connect to mabaxterm
 <img width="1373" height="596" alt="image" src="https://github.com/user-attachments/assets/df425014-9645-4fca-8c60-6bb201b7a422" />
 
 
+
 Prerequisites
 Docker must be installed and running.
 bashdocker --version
 terraform -version
 docker ps
 Steps to run
-bash# 1. Initialise the project (downloads the Docker provider)
+
+# bash# 1. Initialise the project (downloads the Docker provider)
 terraform init
 
 # 2. Preview the changes
