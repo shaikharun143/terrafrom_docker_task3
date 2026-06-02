@@ -85,13 +85,17 @@ cleanly — the core value of Infrastructure as Code.
 
 <img width="976" height="619" alt="image" src="https://github.com/user-attachments/assets/ac7bd459-b662-4ba6-ba1e-6d273ed1ce87" />
 
+
  <img width="762" height="652" alt="image" src="https://github.com/user-attachments/assets/9ca8c4a5-a633-4311-b0fa-7b75df9194dc" />
+ 
 
 <img width="695" height="602" alt="image" src="https://github.com/user-attachments/assets/3bc0a181-1479-4adb-8bbe-5e768a43c0b1" />
 
-<img width="728" height="642" alt="image" src="https://github.com/user-attachments/assets/cc57746a-97fd-43e3-9d1b-2f2d9f2871ff" />
 
 <img width="970" height="556" alt="image" src="https://github.com/user-attachments/assets/aff11d49-7d4e-46f9-9d78-088929042e4b" />
+
+
+<img width="728" height="642" alt="image" src="https://github.com/user-attachments/assets/cc57746a-97fd-43e3-9d1b-2f2d9f2871ff" />
 
 
 
