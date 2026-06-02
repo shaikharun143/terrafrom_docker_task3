@@ -10,6 +10,11 @@ Files
 main.tf — Terraform configuration that pulls the nginx image and runs a container with port 8080 → 80.
 logs_*.txt — execution logs from each Terraform command.
 
+use ec2 instance connect to mabaxterm 
+
+<img width="1373" height="596" alt="image" src="https://github.com/user-attachments/assets/df425014-9645-4fca-8c60-6bb201b7a422" />
+
+
 Prerequisites
 Docker must be installed and running.
 bashdocker --version
@@ -29,19 +34,21 @@ terraform apply        # type "yes" when prompted
 docker ps              # shows the "terraform-nginx" container
 # open http://localhost:8080 in a browser -> nginx welcome page
 
+
+
+
+<img width="1371" height="689" alt="image" src="https://github.com/user-attachments/assets/eca070e2-5bc4-4e07-9477-ba88268e1f55" />
+
+
 # 5. Inspect state
 terraform state list
 terraform state show docker_container.nginx
 
+
+
+
 # 6. Tear everything down
 terraform destroy      # type "yes" when prompted
-What I learned
-Terraform lets you define infrastructure declaratively in code. You describe the
-desired end state (main.tf), and Terraform figures out what to create, in what
-order (resource dependencies), and tracks it all in a state file
-(terraform.tfstate). plan previews changes safely; apply executes them;
-destroy removes them. The same code can be re-run reproducibly and torn down
-cleanly — the core value of Infrastructure as Code.
 
 
 Step 1 — Create an empty repo on GitHub
