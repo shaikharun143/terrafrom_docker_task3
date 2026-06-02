@@ -1,167 +1,24 @@
-# 🚀 Task 3 — Infrastructure as Code (IaC) with Terraform + Docker
-
-This project demonstrates **Infrastructure as Code (IaC)** using Terraform to provision and manage a **Docker Nginx container locally**.
-
----
-
-## 🛠️ Tools Used
-
-- Terraform
-- Docker
-- Git & GitHub
-- MobaXterm / EC2 Instance Connect (for remote execution)
-
----
-
-## 📌 Project Overview
-
-Using Terraform, we:
-- Pulled the **Nginx Docker image**
-- Created and managed a running container
-- Mapped **port 8080 (host) → 80 (container)**
-- Verified deployment in browser
-- Destroyed infrastructure using Terraform
-
----
-
-## 📁 Files Included
-
-- `main.tf` → Terraform configuration file
-- `README.md` → Project documentation
-- `logs_*.txt` → Execution logs from Terraform commands
-- `.gitignore` → Excludes Terraform state and cache files
-
----
-
-## ⚙️ Prerequisites
-
-Ensure the following are installed and running:
-
-```bash
-docker --version
-terraform -version
-docker ps
-🚀 Step-by-Step Execution
-1️⃣ Initialize Terraform
-
-Downloads required providers (Docker provider)
-
-terraform init
-2️⃣ Preview Execution Plan
-terraform plan
-3️⃣ Deploy Infrastructure
 
 
-Creates Docker image + Nginx container
-
-terraform apply
-
-👉 Type yes when prompted
-
-4️⃣ Verify Container
-docker ps
-
-Open in browser:
-
-http://localhost:8080
-```
-✔ You should see the Nginx Welcome Page
-
-
- ```
-5️⃣ Inspect Terraform State
-terraform state list
-terraform state show docker_container.nginx
-6️⃣ Destroy Infrastructure
-
-Removes container and cleans resources
-
-terraform destroy
-
-👉 Type yes when prompted
-
-☁️ GitHub Setup & Push
-1️⃣ Create Repository
-
-Create a new repo on GitHub:
-
-terraform-docker-task3
-2️⃣ Add .gitignore
-cat > .gitignore << 'EOF'
-.terraform/
-.terraform.lock.hcl
-*.tfstate
-*.tfstate.*
-crash.log
-EOF
-3️⃣ Initialize Git
-git init
-git add .
-git commit -m "Task 3: Provision Docker container using Terraform"
-4️⃣ Connect to GitHub
-git branch -M main
-git remote add origin https://github.com/<your-username>/terraform-docker-task3.git
-git push -u origin main
-
-⚠️ Use Personal Access Token (PAT) instead of password when pushing.
-
-🔐 Authentication Note
-
-If Git asks for a password:
-
-Use GitHub Personal Access Token (PAT)
-Scope: repo
-📸 Output Screenshots
-Terraform Init / Plan / Apply
-
-Running Nginx Container
-
-📊 Terraform State Verification
-terraform state list
-terraform state show docker_container.nginx
-🧠 What I Learned
-
-This project helped me understand:
-
-Infrastructure as Code (IaC) fundamentals
-Terraform workflow:
-init → setup providers
-plan → preview changes
-apply → deploy infrastructure
-destroy → cleanup resources
-Terraform state management (terraform.tfstate)
-Docker container lifecycle automation
-Reproducible and version-controlled infrastructure
-🎯 Outcome
-
-Successfully provisioned and managed a Dockerized Nginx server using Terraform and verified deployment locally via browser.
-
-👨‍💻 Author
-
-Harun Shaik
-DevOps & Cloud Enthusiast 🚀
-
-```
-
-Task 3 — Infrastructure as Code (IaC) with Terraform
+# Task 3 — Infrastructure as Code (IaC) with Terraform
 Provision a local Docker container (nginx) using Terraform, then destroy it.
-Tools
+## Tools
 
 Terraform
 Docker
 
-Files
+# Files
 
 main.tf — Terraform configuration that pulls the nginx image and runs a container with port 8080 → 80.
 logs_*.txt — execution logs from each Terraform command.
 
-use ec2 instance connect to mabaxterm 
+# use ec2 instance connect to mabaxterm 
 
 <img width="1373" height="596" alt="image" src="https://github.com/user-attachments/assets/df425014-9645-4fca-8c60-6bb201b7a422" />
 
 
 
-Prerequisites
+# Prerequisites
 Docker must be installed and running.
 bashdocker --version
 terraform -version
@@ -198,7 +55,7 @@ terraform state show docker_container.nginx
 terraform destroy      # type "yes" when prompted
 
 
-Step 1 — Create an empty repo on GitHub
+Step 1 — Create an empty repo on GitHub  |
 Step 2 — Add a .gitignore
 cat > .gitignore << 'EOF'
 .terraform/
@@ -250,6 +107,15 @@ cleanly — the core value of Infrastructure as Code.
 
 
 <img width="728" height="642" alt="image" src="https://github.com/user-attachments/assets/cc57746a-97fd-43e3-9d1b-2f2d9f2871ff" />
+
+
+Successfully provisioned and managed a Dockerized Nginx server using Terraform and verified deployment locally via browser.
+
+👨‍💻 Author
+
+Harun Shaik
+DevOps & Cloud Enthusiast 🚀
+
 
 
 
